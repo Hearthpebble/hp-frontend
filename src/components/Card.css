@@ -1,0 +1,52 @@
+.Card {
+  border: 1px solid black;
+  position: relative;
+  height: 200px;
+  width: 150px;
+  background-color: burlywood;
+}
+.Card-Health {
+  background-color: darkred;
+  top: 175px;
+  left: 125px;
+}
+.Card-Cost {
+  background-color: darkblue;
+  top: 0px;
+  left: 0px;
+}
+.Card-Attack {
+  background-color: darkgoldenrod;
+  top: 175px;
+  left: 0px;
+}
+.text {
+  position: absolute;
+  background-color: wheat;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  word-wrap: break-word; 
+}
+.Card-Desc {
+  font-size: 0.75em;
+  top: 70px;
+  left: 5px;
+  height: 90px;
+  width: 130px;
+}
+.Card-Title {
+  font-size: 0.85em;
+  top: 30px;
+  left: 5px;
+  height: 25px;
+  width: 130px;
+}
+.Card-Type {
+  font-size: 0.75em;
+  top: 175px;
+  left: 30px;
+  height: 10px;
+  width: 80px;
+}
