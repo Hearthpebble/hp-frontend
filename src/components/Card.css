@@ -4,23 +4,27 @@
   height: 200px;
   width: 150px;
   background-color: burlywood;
+  border-radius: 10px;
 }
 .Card-Health {
   background-color: darkred;
   top: 175px;
   left: 125px;
+  border-radius: 0px 0px 9px 0px;
 }
 .Card-Cost {
   background-color: darkblue;
   top: 0px;
   left: 0px;
+  border-radius: 9px 0px 0px 0px;
 }
 .Card-Attack {
   background-color: darkgoldenrod;
   top: 175px;
   left: 0px;
+  border-radius: 0px 0px 0px 9px;
 }
-.text {
+.Card-Text {
   position: absolute;
   background-color: wheat;
   padding: 5px;
@@ -42,6 +46,7 @@
   left: 5px;
   height: 25px;
   width: 130px;
+  font-weight: bold;
 }
 .Card-Type {
   font-size: 0.75em;
@@ -49,4 +54,14 @@
   left: 30px;
   height: 10px;
   width: 80px;
+}
+.Card-Back {
+  position: absolute;
+  background-color: rebeccapurple;
+  z-index: 1;
+  width: 140px;
+  height: 190px;
+  left: 5px;
+  top: 5px;
+  border-radius: 10px;
 }

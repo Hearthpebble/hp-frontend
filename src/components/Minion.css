@@ -1,0 +1,33 @@
+.Minion {
+  position: relative;
+  border: 1px solid black;
+  width: 90px;
+  height: 120px;
+  background: burlywood;
+  border-radius: 50%;
+}
+.Minion-Health {
+  background-color: darkred;
+  top: 80px;
+  left: 63px;
+  border-radius: 9px 0px 9px 0px;
+}
+.Minion-Attack {
+  background-color: darkgoldenrod;
+  top: 80px;
+  left: 2px;
+  border-radius: 0px 9px 0px 9px;
+}
+.Minion-Title {
+  font-size: 0.85em;
+  top: 40px;
+  left: 0px;
+  height: 25px;
+  width: 90px;
+  font-weight: bold;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  word-wrap: break-word;
+}
