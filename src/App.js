@@ -1,26 +1,24 @@
 import React, { Component } from 'react'
-import logo from './logo.svg'
 import './App.css'
-import Card from './components/Card'
-import Minion from './components/Minion'
+import MinionShelf from './components/MinionShelf'
+import Hand from './components/Hand'
+import { cards, minions } from './data'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Card 
-          title="title" 
-          cost={4}
-          health={4}
-          attack={4}
-          desc="desc"
-          type="type"
+        <Hand
+          hand={[{id: '1'}, {id: '2'}, {id: '3'}]}
         />
-        <Card visible={false}></Card>
-        <Minion
-          title="minion"
-          health={4}
-          attack={4}
+        <MinionShelf
+          minions={minions}
+        />
+        <MinionShelf
+          minions={minions}
+        />
+        <Hand
+          hand={cards}
         />
       </div>
     )

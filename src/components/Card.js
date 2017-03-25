@@ -32,7 +32,7 @@ Card.propTypes = {
 }
 
 Card.defaultProps = {
-  visible: true,
+  visible: false,
 }
 
 export default Card
