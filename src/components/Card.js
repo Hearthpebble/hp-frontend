@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import './Card.css'
 
-const Card = ({cost, title, health, attack, desc, type, visible, exhausted}) => {
+const Card = ({cost, title, health, attack, desc, type, visible, exhausted, divineShield, frozen}) => {
   if(!visible) {
     return (
       <div className="Card">
@@ -12,7 +12,11 @@ const Card = ({cost, title, health, attack, desc, type, visible, exhausted}) => 
   return (
     <div className={`
       Card 
-      ${exhausted ? '' : 'playable'}
+      ${exhausted ? '' : 'playable'},
+      Card
+      ${divineShield ? '' : 'playable'},
+      Card
+      ${frozen ? '' : 'playable'},
     `}>
       <div className="Card-Cost token">{ cost }</div>
       <div className="Card-Title Card-Text">{ title }</div>
@@ -33,11 +37,15 @@ Card.propTypes = {
   type: PropTypes.string,
   visible: PropTypes.bool,
   exhausted: PropTypes.bool,
+  divineShield: PropTypes.bool,
+  frozen: PropTypes.bool,
 }
 
 Card.defaultProps = {
   visible: false,
   exhausted: true,
+  divineShield: true,
+  frozen: true,
 }
 
 export default Card
